@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/status-active_log-4fd1c5?style=flat-square)
+
 # 🔐 Security Learning Log
 
 Daily(ish) progress log — HTB Academy and TryHackMe modules, with short notes on what I actually learned from each one.
