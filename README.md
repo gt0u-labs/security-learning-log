@@ -39,4 +39,6 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 
 I connected this to my own homelab whenever I could — network scanning practice ties back to the [Kali/Ubuntu lab on Proxmox](https://github.com/gt0u-labs/homelab-notes) I already run, and this log is meant to keep building on that instead of sitting separately from it.
 
+![Proxmox VM list](./proxmox-lab.png)
+
 Full profile: [gt0u-labs.github.io](https://gt0u-labs.github.io)
