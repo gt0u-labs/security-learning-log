@@ -16,6 +16,7 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 | Linux Fundamentals | Tier 0 | Aug 2026 | Shell navigation, permissions, service management — mostly reinforced what I already use daily in my homelab |
 | Web Requests | Tier 0 | Aug 2026 | HTTP methods, headers, response codes, using curl and browser devtools to interact with APIs |
 | Learning Process | Tier 0 | Aug 2026 | Less technical, more about how to actually learn — staying focused, treating mistakes as part of the process |
+| Identity and Access Management | Tier 1 | Aug 2026 | IAAA model, MFA factor types, SSO (Kerberos/LDAP), RADIUS/TACACS+, OAuth 2.0, OpenID Connect, SAML federation |
 
 ---
 
