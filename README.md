@@ -17,6 +17,7 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 | Web Requests | Tier 0 | Aug 2026 | HTTP methods, headers, response codes, using curl and browser devtools to interact with APIs |
 | Learning Process | Tier 0 | Aug 2026 | Less technical, more about how to actually learn — staying focused, treating mistakes as part of the process |
 | Identity and Access Management | Tier 1 | Aug 2026 | IAAA model, MFA factor types, SSO (Kerberos/LDAP), RADIUS/TACACS+, OAuth 2.0, OpenID Connect, SAML federation |
+| SQL Injection Fundamentals | Tier 0 | Aug 2026 | DBMS/SQL basics, union-based SQL injection, exploiting SQLi for OS interaction, mitigations — genuinely hard, needed a walkthrough for parts of it |
 
 ---
 
@@ -33,6 +34,8 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 | Search Skills | Easy | Aug 2026 | Efficiently searching docs and technical sources instead of guessing |
 | Defensive Security Intro | Easy | Aug 2026 | Investigating an ongoing attack scenario — blue team basics |
 | Linux Fundamentals (Pt1) | Easy | Aug 2026 | First interactive terminal commands |
+| Pentesting Fundamentals | Easy | Aug 2026 | Ethics and methodology behind a pentest engagement |
+| Metasploit: Introduction | Easy | Aug 2026 | Core components of the Metasploit Framework |
 
 ---
 
