@@ -1,4 +1,6 @@
 ![Status](https://img.shields.io/badge/status-active_log-4fd1c5?style=flat-square)
+![HTB](https://img.shields.io/badge/HTB_Academy-9FEF00?style=flat-square&logo=hackthebox&logoColor=black)
+![THM](https://img.shields.io/badge/TryHackMe-212C42?style=flat-square&logo=tryhackme&logoColor=red)
 
 # 🔐 Security Learning Log
 
@@ -18,6 +20,7 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 | Learning Process | Tier 0 | Aug 2026 | Less technical, more about how to actually learn — staying focused, treating mistakes as part of the process |
 | Identity and Access Management | Tier 1 | Aug 2026 | IAAA model, MFA factor types, SSO (Kerberos/LDAP), RADIUS/TACACS+, OAuth 2.0, OpenID Connect, SAML federation |
 | SQL Injection Fundamentals | Tier 0 | Aug 2026 | DBMS/SQL basics, union-based SQL injection, exploiting SQLi for OS interaction, mitigations — genuinely hard, needed a walkthrough for parts of it |
+| JavaScript Deobfuscation | Tier 0 | Aug 2026 | Reading through obfuscated JS to find what it's actually doing — got stuck looking in the wrong place before it clicked |
 
 ---
 
@@ -36,6 +39,7 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 | Linux Fundamentals (Pt1) | Easy | Aug 2026 | First interactive terminal commands |
 | Pentesting Fundamentals | Easy | Aug 2026 | Ethics and methodology behind a pentest engagement |
 | Metasploit: Introduction | Easy | Aug 2026 | Core components of the Metasploit Framework |
+| Intro to Pipeline Automation | Easy | Aug 2026 | DevOps CI/CD pipelines and where security concerns show up in them (part of the DevSecOps path — skipped the paid intro and the SDLC/SSDLC rooms to get to this one) |
 
 ---
 
