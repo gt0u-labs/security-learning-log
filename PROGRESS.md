@@ -17,6 +17,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | JavaScript Deobfuscation | Tier 0 | Aug 2026 | Reading through obfuscated JS to find what it's actually doing — got stuck looking in the wrong place before it clicked |
 | Phishing Email Analysis (LetsDefend) | Tier 0 | Aug 2026 | Email header analysis, SPF/DKIM/DMARC, static and dynamic analysis of malicious attachments, WHOIS/MX attribution |
 | Introduction to Networking | Tier 0 | Aug 2026 | Internet structure, proxies, topologies, OSI/TCP-IP, IPv4/IPv6, subnetting |
+| File Inclusion | Tier 0 | Aug 2026 | LFI, path traversal, filter bypasses, RCE via PHP wrappers/RFI/log poisoning — genuinely hard, needed outside references to get through the last flags |
 
 ---
 
@@ -38,6 +39,8 @@ Every module and room completed, in order, with a short note on what I actually 
 | Intro to Pipeline Automation | Easy | Aug 2026 | DevOps CI/CD pipelines and where security concerns show up in them (part of the DevSecOps path) |
 | Red Team Fundamentals | Easy | Aug 2026 | Basics of a red team engagement, stakeholders, how it differs from other security engagements |
 | Red Team Threat Intel | Medium | Aug 2026 | Applying threat intel to red team engagements and adversary emulation |
+| Red Team OPSEC | Easy | Aug 2026 | Operations security process for red team engagements |
+| Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
 
 ---
 
