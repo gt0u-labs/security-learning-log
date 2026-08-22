@@ -42,7 +42,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | Red Team Threat Intel | Medium | Aug 2026 | Applying threat intel to red team engagements and adversary emulation |
 | Red Team OPSEC | Easy | Aug 2026 | Operations security process for red team engagements |
 | Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
-| SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
+| SOC L1 Alert Triage | Easy | Aug 2026 | Building a systematic approach to triaging SOC alerts |
 
 ---
 
