@@ -12,7 +12,7 @@ Not a certification. Not a claim of expertise. Just a running record of what I'v
 
 ## 📊 Where I'm at
 
-**26 modules/rooms completed** across HTB Academy and TryHackMe, spanning:
+**28 modules/rooms completed** across HTB Academy and TryHackMe, spanning:
 
 - **Fundamentals:** Linux, networking, web requests, subnetting
 - **Web security:** SQL injection, JavaScript deobfuscation
