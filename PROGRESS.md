@@ -18,6 +18,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | Phishing Email Analysis (LetsDefend) | Tier 0 | Aug 2026 | Email header analysis, SPF/DKIM/DMARC, static and dynamic analysis of malicious attachments, WHOIS/MX attribution |
 | Introduction to Networking | Tier 0 | Aug 2026 | Internet structure, proxies, topologies, OSI/TCP-IP, IPv4/IPv6, subnetting |
 | File Inclusion | Tier 0 | Aug 2026 | LFI, path traversal, filter bypasses, RCE via PHP wrappers/RFI/log poisoning — genuinely hard, needed outside references to get through the last flags |
+| Introduction to Web Applications | Tier 0 | Aug 2026 | Front-end/back-end architecture, HTML/CSS/JS basics, HTML Injection/XSS/CSRF intro, web servers, databases, OWASP Top 10 overview |
 
 ---
 
@@ -41,6 +42,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | Red Team Threat Intel | Medium | Aug 2026 | Applying threat intel to red team engagements and adversary emulation |
 | Red Team OPSEC | Easy | Aug 2026 | Operations security process for red team engagements |
 | Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
+| SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
 
 ---
 
