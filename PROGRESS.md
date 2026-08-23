@@ -19,6 +19,8 @@ Every module and room completed, in order, with a short note on what I actually 
 | Introduction to Networking | Tier 0 | Aug 2026 | Internet structure, proxies, topologies, OSI/TCP-IP, IPv4/IPv6, subnetting |
 | File Inclusion | Tier 0 | Aug 2026 | LFI, path traversal, filter bypasses, RCE via PHP wrappers/RFI/log poisoning — genuinely hard, needed outside references to get through the last flags |
 | Introduction to Web Applications | Tier 0 | Aug 2026 | Front-end/back-end architecture, HTML/CSS/JS basics, HTML Injection/XSS/CSRF intro, web servers, databases, OWASP Top 10 overview |
+| Introduction to Information Security | Tier 0 | Aug 2026 | InfoSec structure, threat types (malware, phishing, APTs), red/blue/purple team roles, career paths up to CISO |
+| Getting Started | Tier 0 | Aug 2026 | Pentesting overview, scanning/enumeration, public exploits, file transfers, priv esc primer — finished with a real skills assessment (one guided box, one unguided). Took ~4 hours and got stuck at 80% on a port 9443 issue before figuring it out — first box completed without a walkthrough |
 
 ---
 
@@ -42,8 +44,24 @@ Every module and room completed, in order, with a short note on what I actually 
 | Red Team Threat Intel | Medium | Aug 2026 | Applying threat intel to red team engagements and adversary emulation |
 | Red Team OPSEC | Easy | Aug 2026 | Operations security process for red team engagements |
 | Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
-| SOC L1 Alert Triage | Easy | Aug 2026 | Building a systematic approach to triaging SOC alerts |
+| SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
+| The CIA Triad | — | Aug 2026 | Confidentiality, Integrity, Availability as the foundation of security decision-making |
 
 ---
 
 [← Back to summary](./README.md)
+
+---
+
+## 🔧 Infrastructure troubleshooting: GPU passthrough with a physical display
+
+Set up a dedicated Kali Linux VM on Proxmox VE with a physical monitor, keyboard, and mouse connected directly (via GPU passthrough), instead of relying on Proxmox's web console — to fix the sluggish performance of running Burp Suite and other heavier tools through the browser-based console.
+
+**What went wrong, in order, and how each was diagnosed:**
+
+1. **No video output at all** — traced through `dmesg` to `vfio-pci 0000:01:00.0: Invalid PCI ROM header signature: expecting 0xaa55, got 0xffff`. The card's ROM couldn't be read live from `/sys/bus/pci/devices/.../rom` (I/O error even with the VM stopped), so I downloaded the correct vendor-specific VBIOS (MSI GTX 1080 Gaming X) from a public VBIOS archive and pointed the VM at it via `romfile=` in the PCI device config.
+2. **Keyboard/mouse not responding** on the physical display — the GPU being passed through doesn't automatically bring USB with it. Added the keyboard and mouse as separate USB devices (by vendor/device ID) in the VM hardware config.
+3. **Still no display after the ROM fix** — turned out the ISO was still mounted and the boot order had the disk before the CD-ROM, so the VM kept trying (and failing) to reboot into an incomplete install instead of finishing setup. Removed the mounted ISO, fixed the boot order, and set the virtual Display device to `none` (letting the passthrough GPU be the only display output instead of competing with Proxmox's virtual VGA).
+4. **A later mistake to avoid repeating:** manually installing `nvidia-driver` inside Kali after passthrough was already working broke the install entirely (no video, no VNC fallback) — had to rebuild the VM from scratch. Passthrough already provides working video output without installing GPU drivers manually inside the guest.
+
+**Result:** Kali now runs through the passed-through GPU with a real monitor/keyboard/mouse, noticeably faster than the web console for anything GUI-heavy like Burp Suite.
