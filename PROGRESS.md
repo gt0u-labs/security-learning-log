@@ -24,6 +24,15 @@ Every module and room completed, in order, with a short note on what I actually 
 
 ---
 
+## 🎯 HTB Labs (unguided machines)
+
+| Machine | Difficulty | OS | Date | Notes |
+|---|---|---|---|---|
+| Meow | Very Easy | Linux | Aug 2026 | First Labs machine — straightforward after the Academy fundamentals |
+| Fawn | Very Easy | Linux | Aug 2026 | Second Labs machine, same day |
+
+---
+
 ## 📚 TryHackMe
 
 | Room | Difficulty | Date | Key takeaway |
@@ -46,6 +55,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
 | SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
 | The CIA Triad | — | Aug 2026 | Confidentiality, Integrity, Availability as the foundation of security decision-making |
+| Encryption - Crypto 101 | Medium | Aug 2026 | Fundamentals of encryption/cryptography — genuinely enjoyed this one |
 
 ---
 
