@@ -30,6 +30,8 @@ Every module and room completed, in order, with a short note on what I actually 
 |---|---|---|---|---|
 | Meow | Very Easy | Linux | Aug 2026 | First Labs machine — straightforward after the Academy fundamentals |
 | Fawn | Very Easy | Linux | Aug 2026 | Second Labs machine, same day |
+| Dancing | Very Easy | Windows | Aug 2026 | First Windows machine on Labs |
+| Redeemer | Very Easy | Linux | Aug 2026 | Straightforward — Labs Very Easy machines are noticeably simpler than the denser Academy modules like File Inclusion |
 
 ---
 
@@ -56,6 +58,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
 | The CIA Triad | — | Aug 2026 | Confidentiality, Integrity, Availability as the foundation of security decision-making |
 | Encryption - Crypto 101 | Medium | Aug 2026 | Fundamentals of encryption/cryptography — genuinely enjoyed this one |
+| MS Sentinel: Introduction | Easy | Aug 2026 | What Microsoft Sentinel is and how it fits into a SOC analyst's day-to-day work |
 
 ---
 
