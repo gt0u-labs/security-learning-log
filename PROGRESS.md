@@ -32,6 +32,7 @@ Every module and room completed, in order, with a short note on what I actually 
 | Fawn | Very Easy | Linux | Aug 2026 | Second Labs machine, same day |
 | Dancing | Very Easy | Windows | Aug 2026 | First Windows machine on Labs |
 | Redeemer | Very Easy | Linux | Aug 2026 | Straightforward — Labs Very Easy machines are noticeably simpler than the denser Academy modules like File Inclusion |
+| Cap | Easy | Linux | Aug 2026 | Noticeably harder than the Very Easy machines — needed one AI-assisted hint to understand what a specific step was asking for |
 
 ---
 
@@ -55,10 +56,11 @@ Every module and room completed, in order, with a short note on what I actually 
 | Red Team Threat Intel | Medium | Aug 2026 | Applying threat intel to red team engagements and adversary emulation |
 | Red Team OPSEC | Easy | Aug 2026 | Operations security process for red team engagements |
 | Senior Security Analyst Intro | Easy | Aug 2026 | What a SOC Level 2 analyst actually does day to day |
-| SOC L1 Alert Triage | Easy | Aug 2026 | Building a systematic approach to triaging SOC alerts |
-| The CIA Triad | Easy | Aug 2026 | Confidentiality, Integrity, Availability as the foundation of security decision-making |
+| SOC L1 Alert Triage | — | Aug 2026 | Building a systematic approach to triaging SOC alerts |
+| The CIA Triad | — | Aug 2026 | Confidentiality, Integrity, Availability as the foundation of security decision-making |
 | Encryption - Crypto 101 | Medium | Aug 2026 | Fundamentals of encryption/cryptography — genuinely enjoyed this one |
 | MS Sentinel: Introduction | Easy | Aug 2026 | What Microsoft Sentinel is and how it fits into a SOC analyst's day-to-day work |
+| Introductory Networking | Easy | Aug 2026 | Networking theory and basic tools — more tedious than hard, needed close attention to detail |
 
 ---
 
