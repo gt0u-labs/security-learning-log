@@ -35,6 +35,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Cap | Easy | Linux | Aug 2026 | Harder than the Very Easy ones — needed one hint to understand what a step was actually asking for |
 | Appointment | Very Easy | Linux | Aug 2026 | |
 | Sequel | Very Easy | Linux | Aug 2026 | |
+| Crocodile | Very Easy | Linux | Aug 2026 | Pretty entertaining, very light difficulty |
 
 ---
 
@@ -65,6 +66,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Introductory Networking | Easy | Aug 2026 | More tedious than hard — needed close attention to detail |
 | Cluster Hardening | Easy | Aug 2026 | Finished in about 15 minutes |
 | K8s Best Security Practices | Medium | Aug 2026 | Kubernetes security at the cluster level |
+| History of Malware | Easy | Aug 2026 | Actually fun — the first computer virus dates back to 1971 |
 
 ---
 
