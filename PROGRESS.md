@@ -37,6 +37,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Sequel | Very Easy | Linux | Aug 2026 | |
 | Crocodile | Very Easy | Linux | Aug 2026 | Pretty entertaining, very light difficulty |
 | Responder | Very Easy | Windows | Aug 2026 | |
+| Archetype | Very Easy | Windows | Aug 2026 | |
 
 ---
 
@@ -69,6 +70,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | K8s Best Security Practices | Medium | Aug 2026 | Kubernetes security at the cluster level |
 | History of Malware | Easy | Aug 2026 | Actually fun — the first computer virus dates back to 1971 |
 | Intro to Containerisation | Easy | Aug 2026 | Estimated 30 min, finished in under 10 |
+| Custom Tooling Using Python | Easy | Aug 2026 | |
 
 ---
 
