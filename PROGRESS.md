@@ -39,6 +39,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Responder | Very Easy | Windows | Aug 2026 | |
 | Archetype | Very Easy | Windows | Aug 2026 | |
 | Three | Very Easy | Linux | Aug 2026 | |
+| Vaccine | Very Easy | Linux | Sep 2026 | |
 
 ---
 
@@ -73,6 +74,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Intro to Containerisation | Easy | Aug 2026 | Estimated 30 min, finished in under 10 |
 | Custom Tooling Using Python | Easy | Aug 2026 | |
 | Intro to Logs | Easy | Aug 2026 | |
+| Web Application Security | Easy | Sep 2026 | |
 
 ---
 
