@@ -40,6 +40,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Archetype | Very Easy | Windows | Aug 2026 | |
 | Three | Very Easy | Linux | Aug 2026 | |
 | Vaccine | Very Easy | Linux | Sep 2026 | |
+| Oopsie | Very Easy | Linux | Sep 2026 | |
 
 ---
 
@@ -75,6 +76,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Custom Tooling Using Python | Easy | Aug 2026 | |
 | Intro to Logs | Easy | Aug 2026 | |
 | Web Application Security | Easy | Sep 2026 | |
+| Passive Reconnaissance | Easy | Sep 2026 | |
 
 ---
 
