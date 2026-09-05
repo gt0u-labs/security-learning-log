@@ -41,6 +41,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Three | Very Easy | Linux | Aug 2026 | |
 | Vaccine | Very Easy | Linux | Sep 2026 | |
 | Oopsie | Very Easy | Linux | Sep 2026 | |
+| Unified | Very Easy | Linux | Sep 2026 | Got stuck on one question — turned out to be an HTB platform bug, a power cut and retry with the exact same answer fixed it |
 
 ---
 
@@ -77,6 +78,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Intro to Logs | Easy | Aug 2026 | |
 | Web Application Security | Easy | Sep 2026 | |
 | Passive Reconnaissance | Easy | Sep 2026 | |
+| Traffic Analysis Essentials | Easy | Sep 2026 | |
 
 ---
 
