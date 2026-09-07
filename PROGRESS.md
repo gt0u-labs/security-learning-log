@@ -43,6 +43,7 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Oopsie | Very Easy | Linux | Sep 2026 | |
 | Unified | Very Easy | Linux | Sep 2026 | Got stuck on one question — turned out to be an HTB platform bug, a power cut and retry with the exact same answer fixed it |
 | Orion | Very Easy | Linux | Sep 2026 | |
+| Support | Easy | Windows | Sep 2026 | |
 
 ---
 
@@ -81,6 +82,8 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | Passive Reconnaissance | Easy | Sep 2026 | |
 | Traffic Analysis Essentials | Easy | Sep 2026 | |
 | TryHack3M: Bricks Heist | Easy | Sep 2026 | |
+| Intro to IaC | Very Easy | Sep 2026 | Explained with Terminator movie examples — surprisingly fun way to teach infrastructure-as-code |
+| Python Basics | Easy | Sep 2026 | |
 
 ---
 
