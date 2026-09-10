@@ -84,6 +84,8 @@ Everything I've completed so far, in order, with a quick note on what actually s
 | TryHack3M: Bricks Heist | Easy | Sep 2026 | |
 | Intro to IaC | Very Easy | Sep 2026 | Explained with Terminator movie examples — surprisingly fun way to teach infrastructure-as-code |
 | Python Basics | Easy | Sep 2026 | |
+| Nessus | Easy | Sep 2026 | |
+| Junior Security Analyst Intro | Easy | Sep 2026 | |
 
 ---
 
