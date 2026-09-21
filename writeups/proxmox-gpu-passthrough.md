@@ -1,59 +1,70 @@
-# 🔐 Security Learning Log
+# 🔧 Proxmox GPU passthrough — VFIO troubleshooting
 
-Ongoing, self-directed defensive security training — HTB Academy, HTB Labs and
-TryHackMe — with notes on what each module actually covered.
+**Goal:** run a Kali Linux VM on Proxmox VE with a monitor, keyboard and mouse
+attached directly through GPU passthrough, instead of going through Proxmox's
+web console — Burp Suite and other GUI-heavy tools were unusable over the
+browser console.
 
-Kept as a running record so the work is traceable, and connected back to the
-homelab I built and documented.
-
----
-
-## Where I'm at
-
-**64 modules, rooms and machines completed** across HTB Academy, HTB Labs and
-TryHackMe (Aug – Sep 2026).
-
-Organized by role rather than by platform:
-
-| Area | Covers |
-| --- | --- |
-| **Blue team / SOC** | Alert triage, log analysis, phishing and email header analysis (SPF/DKIM/DMARC), traffic analysis, defensive security workflow |
-| **Systems & networking** | Linux fundamentals, Windows fundamentals, OSI/TCP-IP, subnetting, network architecture |
-| **Identity & access** | IAAA model, MFA, SSO (Kerberos/LDAP), RADIUS/TACACS+, OAuth 2.0, OpenID Connect, SAML |
-| **Web & application security** | SQL injection, file inclusion, JavaScript deobfuscation, OWASP Top 10 |
-| **Offensive fundamentals** | Pentesting methodology, Metasploit, reconnaissance, threat intel |
-| **Cloud & DevSecOps** | CI/CD pipeline security, containerisation, Kubernetes hardening, IaC |
-
-📄 **[Full module-by-module log →](PROGRESS.md)**
+**Hardware:** MSI GTX 1080 Gaming X · Proxmox VE host · Kali Linux guest
 
 ---
 
-## Write-ups
+## What broke, and how each part was fixed
 
-Longer pieces where something broke and I had to work out why.
+### 1. No video output at all
 
-**[Proxmox GPU passthrough — VFIO troubleshooting →](writeups/proxmox-gpu-passthrough.md)**
-Diagnosing a PCI ROM signature error through `dmesg`, resolving it with a
-card-specific VBIOS, and the driver mistake that cost me a full rebuild.
+`dmesg` pointed straight at it:
+
+```
+vfio-pci 0000:01:00.0: Invalid PCI ROM header signature: expecting 0xaa55, got 0xffff
+```
+
+The card's ROM couldn't be read live from
+`/sys/bus/pci/devices/0000:01:00.0/rom` — I/O error even with the VM fully
+stopped.
+
+**Fix:** obtained the correct vendor-specific VBIOS for this exact card from a
+public VBIOS archive and pointed the VM at it with `romfile=` in the PCI device
+configuration.
+
+### 2. Keyboard and mouse dead on the physical display
+
+GPU passthrough does not carry USB with it — that caught me out.
+
+**Fix:** added the keyboard and mouse as individual USB devices, by
+vendor/device ID, in the VM's hardware configuration.
+
+### 3. Still no output after the ROM fix
+
+The install ISO was still mounted and the disk sat ahead of the CD-ROM in the
+boot order, so the VM kept trying to boot an unfinished install instead of
+continuing setup.
+
+**Fix:** unmounted the ISO, corrected the boot order, and set the virtual
+Display to `none` so the passed-through GPU wasn't competing with Proxmox's own
+virtual VGA output.
+
+### 4. The mistake — installing `nvidia-driver` inside the guest
+
+Passthrough was already working. I installed `nvidia-driver` inside Kali anyway,
+and it broke the whole install: no video, no VNC fallback, full rebuild from
+scratch.
+
+**What I got wrong:** passthrough gives the guest working video without
+installing GPU drivers inside it at all. The driver was solving a problem that
+no longer existed, and it took out the only working display path in the process.
 
 ---
 
-## How this connects to the lab
+## Result
 
-The training here wasn't separate from my own infrastructure. Network
-reconnaissance practice targeted the Kali and Ubuntu VMs on the
-[Proxmox homelab](https://github.com/gt0u-labs/homelab-notes) I built, and the
-log analysis modules tied back to the Grafana/Loki/Promtail stack I ran on the
-same setup.
+Kali ran through the passed-through GPU with a real monitor, keyboard and
+mouse — substantially faster than the web console for anything GUI-heavy.
 
 ---
 
-## Next
+## What this exercise covered
 
-- Wazuh deployment with custom detection rules
-- Sigma rules mapped to MITRE ATT&CK
-- CompTIA Security+
-
----
-
-🌐 Full profile: [gt0u-labs.github.io](https://gt0u-labs.github.io/)
+`VFIO` · `PCI/GPU passthrough` · `dmesg log diagnosis` · `VBIOS and romfile` ·
+`USB device mapping` · `VM boot order` · `structured troubleshooting under an
+unclear failure`
