@@ -4,7 +4,7 @@ Ongoing, self-directed defensive security training — HTB Academy, HTB Labs and
 TryHackMe — with notes on what each module actually covered.
 
 Kept as a running record so the work is traceable, and connected back to the
-infrastructure I already run in my own homelab.
+homelab I built and documented.
 
 ---
 
@@ -40,11 +40,11 @@ card-specific VBIOS, and the driver mistake that cost me a full rebuild.
 
 ## How this connects to the lab
 
-The training here isn't separate from the infrastructure I run. Network
-reconnaissance practice targets the Kali and Ubuntu VMs on my own
-[Proxmox homelab](https://github.com/gt0u-labs/homelab-notes), and the log
-analysis modules feed directly into the Grafana/Loki/Promtail stack I maintain
-on the same setup.
+The training here wasn't separate from my own infrastructure. Network
+reconnaissance practice targeted the Kali and Ubuntu VMs on the
+[Proxmox homelab](https://github.com/gt0u-labs/homelab-notes) I built, and the
+log analysis modules tied back to the Grafana/Loki/Promtail stack I ran on the
+same setup.
 
 ---
 
